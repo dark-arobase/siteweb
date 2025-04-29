@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body{
+  background-color: #141414;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+}
+body .page{
+  margin: 20px 80px;
+}
+/* Barre de navigation */
+nav{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  position:sticky;
+  top: 0;
+  background-color: #141414;
+  padding: 10px 0px;
+}
+nav .onglets{
+  display:flex;
+  flex-wrap:wrap;
+  margin-top: 5px;
+}
+nav .onglets{
+  display:flex;
+  flex-wrap:wrap;
+}
+nav .onglets a {
+  margin-right: 20px;
+  cursor:pointer;
+}
+nav .buttons button{
+  padding: 13px 20px;
+  color: #fff;
+  border:none;
+  font-size: 15px;
+  cursor:pointer;
+  outline:none;
+}
+nav .buttons .login{
+  background-color: inherit;
+  margin-right: 10px;
+  color: #8f8f8f;
+}
+nav .buttons .register{
+  background-color: #f54266;
+}
+/* Fin de la barre de navigation
+
+/* Header */
+header{
+  margin-top: 40px;
+  background: url('https://officialpsds.com/imageview/rn/62/rn6205_large.png?1521316483');
+  background-repeat: no-repeat;
+  background-size: 400px 400px;
+  background-position: center;
+}
+header h1{
+  text-align:center;
+  font-size: 60px;
+  padding: 150px;
+  transition: transform 2.5s;
+}
+/* Fin du header */
+
+/* Pied de page */
+footer{
+  background-color: #1a1a1a;
+  padding: 25px 100px;
+  color:#828282;
+}
+footer .colonnes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* Fin du pied de page */
+
+@media screen and (max-width: 640px){
+  body .page{
+    margin: 10px;
+  }
+  nav .onglets{
+    display:none;
+  }
+  header{
+    margin-top: 20px;
+    background-size: 250px 250px;
+  }
+  header h1{
+    font-size: 30px;
+    padding: 100px;
+  }
+}

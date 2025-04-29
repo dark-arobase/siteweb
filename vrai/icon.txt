@@ -1,0 +1,44 @@
+Ahhh d’accord, tu veux savoir comment ajouter une icône en haut de chaque bloc, comme dans ta section Pourquoi nous choisir , mais sans utiliser d’image — uniquement avec les icônes Font Awesome.
+
+Pas de souci, voilà comment on fait ! 👇
+
+✅ Étapes pour ajouter une icône (ex une voiture) en haut d’un bloc 
+🔹 1. Dans chaque .item, tu ajoutes une balise i comme ça 
+html
+Copier
+Modifier
+i class=fas fa-car fa-3x text-primary mb-3i
+🎨 Explication des classes 
+
+Classe	Effet
+fas	Style solide de Font Awesome
+fa-car	Icône de voiture 🚗
+fa-truck, fa-gem, etc.	Autres icônes disponibles
+fa-3x	Taille de l’icône (3x)
+text-primary	Couleur bleue (Bootstrap)
+mb-3	Marge en bas (espacer du titre)
+🧪 Exemple de bloc complet avec icône 
+html
+Copier
+Modifier
+div class=col-md-4
+    div class=item animate__animated animate__fadeInLeft
+        i class=fas fa-car fa-3x text-primary mb-3i
+        h4Voitureh4
+        pstrong style=color #cd7f32;Bronze strong Lavage intérieur (60$)p
+        pstrong style=color #c0c0c0;Argent strong Lavage complet (120$)p
+        pstrong style=color #ffd700;Or strong Lavage + cire + désinfection (200$)p
+    div
+div
+💡 Pour utiliser d’autres icônes, tu peux changer fa-car par 
+fa-truck → 🚛
+
+fa-motorcycle → 🏍️
+
+fa-car-side → 🚙
+
+fa-gem → 💎 (pour véhicule de luxe)
+
+fa-car-alt → 🚘
+
+Tu veux que je t’écrive tous les blocs avec les bons icônes pour chaque type 
