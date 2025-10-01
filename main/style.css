@@ -1,0 +1,75 @@
+body{
+font-family:'Roboto',sans-serif;
+margin:0;
+padding:0;
+background-color:#f8f9fa;
+color:#333;
+}
+header{
+background-color:#111827;
+color:#ffffff;
+padding:1.5rem 0;
+}
+header .logo{
+font-family:'Open Sans',sans-serif;
+font-size:2.5rem;
+font-weight:700;
+}
+nav{
+background-color:#112246;
+padding:1rem;
+}
+nav a{
+font-family:'Open Sans',sans-serif;
+color:white;
+margin:0 1rem;
+text-decoration:none;
+font-weight:600;
+font-size:1rem;
+}
+nav a:hover{
+color:#17a2b8;
+}
+h2,h4{
+font-family:'Open Sans',sans-serif;
+font-weight:700;
+}
+.services,.why-choose-us,.contrat{
+padding:3rem 0;
+}
+.services .service-item,.why-choose-us .item,.contrat .item{
+text-align:center;
+padding:1.5rem;
+border:1px solid #ddd;
+border-radius:10px;
+transition:transform 0.3s,box-shadow 0.3s;
+}
+.services .service-item:hover,.why-choose-us .item:hover,.contrat .item:hover{
+transform:scale(1.05);
+box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+.footer-info{
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+padding:2rem 0;
+}
+footer{
+background-color:#111827;
+color:white;
+text-align:center;
+padding:2rem;
+font-family:'Roboto',sans-serif;
+}
+footer h4{
+font-family:'Open Sans',sans-serif;
+font-weight:600;
+}
+footer a{
+color:#17a2b8;
+text-decoration:none;
+font-weight:500;
+}
+footer a:hover{
+text-decoration:underline;
+}

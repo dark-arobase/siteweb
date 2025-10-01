@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krystal Clean - Nettoyage Automobile</title>
+    <link rel="icon" type="image/png" sizes="56x56" href="auto.jpg" alt="Logo de Krystal Clean">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background-color: #111827;
+            color: #ffffff;
+            padding: 1.5rem 0;
+        }
+        header .logo {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        nav {
+            background-color: #112246;
+            padding: 1rem;
+        }
+        nav a {
+            font-family: 'Open Sans', sans-serif;
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        nav a:hover {
+            color: #17a2b8;
+        }
+        h2, h4 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+        }
+        .services, .why-choose-us, .contrat {
+            padding: 3rem 0;
+        }
+        .services .service-item, .why-choose-us .item, .contrat .item {
+            text-align: center;
+            padding: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .services .service-item:hover, .why-choose-us .item:hover, .contrat .item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .footer-info {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 2rem 0;
+        }
+        footer {
+            background-color: #111827;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            font-family: 'Roboto', sans-serif;
+        }
+        footer h4 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+        }
+        footer a {
+            color: #17a2b8;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="position-relative text-center animate__animated animate__fadeInDown">
+        <!-- Bouton en haut à droite -->
+        <button id="languageToggle" 
+                class="lang-toggle btn btn-light btn btn-secondary position-absolute" 
+                style="top: 10px; right: 20px;">
+                English
+        </button>
+
+        <!-- Contenu centré (logo + texte) -->
+        <div class="container d-flex justify-content-center align-items-center" style="height: 100px;">
+            <img src="auto.jpg" alt="Logo" style="height: 80px; margin-right: 10px;">
+            <div class="logo">Krystal Clean</div>
+        </div>                
+    </header>    
+    
+    <!-- End of Header Section -->
+
+    <!-- Navigation Section -->
+    <nav class="text-center animate__animated animate__fadeInUp">
+        <div class="d-flex justify-content-center align-items-center">
+            <a href="#home" class="mx-3">Accueil</a>
+            <a href="#about" class="mx-3">À propos</a>
+            <a href="#services"class="mx-3">Services</a>
+            <a href="#contact" class="mx-3">Contact</a>
+            <a href="#horaires" class="mx-3">Horaires</a>
+            <a href="#contrat" class="mx-3">Contrat</a>
+        </div>
+    </nav>
+    <!-- End of Navigation Section -->
+    <!-- Home Section -->
+    <section id="home" class="py-5">
+        <div class="container text-center">
+            <h1 class="animate__animated animate__fadeInDown" style="font-family: 'Georgia', serif; font-size: 3rem; color: #333;">Bienvenue chez Krystal Clean</h1>
+            <p class="animate__animated animate__fadeInUp" style="font-family: 'Roboto', sans-serif; font-size: 1.2rem; color: #555; margin-top: 1rem;">
+            Offrez à votre véhicule le soin qu'il mérite avec nos services de nettoyage automobile professionnels.
+            </p>
+            <a href="#services" class="btn btn-primary mt-4 animate__animated animate__fadeInUp">Découvrez nos services</a>
+        </div>
+    </section>
+    <!-- End of Home Section -->
+    
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated animate__zoomIn" style="font-size: 2rem; color: #333;">Nos Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-item animate__animated animate__fadeInLeft">
+                        <i class="fas fa-car fa-3x text-primary mb-3"></i>
+                        <h4>Nettoyage intérieur</h4>
+                        <p>Un nettoyage en profondeur pour un intérieur impeccable.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item animate__animated animate__fadeInUp">
+                        <i class="fas fa-spray-can fa-3x text-primary mb-3"></i>
+                        <h4>Traitement à la cire</h4>
+                        <p>Protection et brillance pour votre carrosserie.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item animate__animated animate__fadeInRight">
+                        <i class="fas fa-broom fa-3x text-primary mb-3"></i>
+                        <h4>Nettoyage extérieur</h4>
+                        <p>Redonnez de l'éclat à l'extérieur de votre véhicule.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Services Section -->
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated animate__fadeInDown" style="font-size: 2rem; color: #333;">Pourquoi nous choisir ?</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="item animate__animated animate__fadeInLeft">
+                        <i class="fas fa-tools fa-3x text-primary mb-3"></i>
+                        <h4>Équipement moderne</h4>
+                        <p>Nous utilisons des outils modernes pour garantir un service de qualité.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="item animate__animated animate__fadeInUp">
+                        <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
+                        <h4>Garantie de service</h4>
+                        <p>Votre satisfaction est notre priorité absolue.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="item animate__animated animate__fadeInRight">
+                        <i class="fas fa-headset fa-3x text-primary mb-3"></i>
+                        <h4>Support dédié</h4>
+                        <p>Une équipe à votre écoute pour répondre à vos besoins.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Why Choose Us Section -->
+
+    <!-- debut prix -->
+    <section id="contrat" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 animate__animated animate__fadeInDown" style="font-size: 2rem; color: #333;">Contrat</h2>
+            <p class="text-center animate__animated animate__fadeInUp" style="font-size: 1.2rem; line-height: 1.8; color: #555;">
+                <strong style="color: #cd7f32;">Bronze:</strong> Lavage extérieur<br>
+                <strong style="color: #c0c0c0;">Argent:</strong> Lavage intérieur<br>
+                <strong style="color: #ffd700;">Or:</strong> Lavage extérieur et intérieur<br>
+                <strong style="color: #cd7f32;">Forfait mensuel Bronze:</strong> À venir<br>
+                <strong style="color: #c0c0c0;">Forfait mensuel Argent:</strong> À venir<br>
+                <strong style="color: #ffd700;">Forfait mensuel Or:</strong> À venir
+            </p>
+        </div>
+    </section>
+    <!--fin prix-->
+
+    <!--debut contrat-->
+    <section class="contrat">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated animate__fadeInDown" style="font-size: 2rem; color: #333;" >Contrats par type de véhicule</h2>
+            <div class="row">
+
+                <!-- Voiture -->
+                <div class="col-md-4">
+                    <div class="item animate__animated animate__fadeInLeft text-center">
+                        <i class="fas fa-car fa-3x text-primary mb-3"></i>
+                        <h4>Voiture</h4>
+                        <p><strong style="color: #cd7f32;">Bronze :</strong> Lavage extérieur (60$)</p>
+                        <p><strong style="color: #c0c0c0;">Argent :</strong> Lavage intérieur (90$)</p>
+                        <p><strong style="color: #ffd700;">Or :</strong>Lavage tout inclus (170$)</p>
+                    </div>
+                </div>
+
+                <!-- Camion -->
+                <div class="col-md-4">
+                    <div class="item animate__animated animate__fadeInUp text-center">
+                        <i class="fas fa-truck fa-3x text-primary mb-3"></i>
+                        <h4>Camion et Pick up</h4>
+                        <p><strong style="color: #cd7f32;">Bronze :</strong> Lavage extérieur (75$)</p>
+                        <p><strong style="color: #c0c0c0;">Argent :</strong> Lavage intérieur (150$)</p>
+                        <p><strong style="color: #ffd700;">Or :</strong> Lavage tout inclus (225$)</p>
+                    </div>
+                </div>
+
+                <!-- Moto -->
+                <div class="col-md-4">
+                    <div class="item animate__animated animate__fadeInRight text-center">
+                        <i class="fas fa-motorcycle fa-3x text-primary mb-3"></i>
+                        <h4>Moto</h4>
+                        <p><strong style="color: #cd7f32;">Bronze :</strong> (50$)</p>
+                        <p><strong style="color: #c0c0c0;">Argent :</strong> (80$)</p>
+                        <p><strong style="color: #ffd700;">Or :</strong> (120$)</p>
+                    </div>
+                </div>
+
+                <!-- Grosse Voiture -->
+                <div class="col-md-4">
+                    <div class="item animate__animated animate__fadeInLeft text-center">
+                        <i class="fas fa-car-side fa-3x text-primary mb-3"></i>
+                        <h4>Grosse Voiture</h4>
+                        <p><strong style="color: #cd7f32;">Bronze :</strong> (60$)</p>
+                        <p><strong style="color: #c0c0c0;">Argent :</strong> (100$)</p>
+                        <p><strong style="color: #ffd700;">Or :</strong> (180$)</p>
+                    </div>
+                </div>
+
+                <!-- Véhicule de luxe -->
+                <div class="col-md-4">
+                    <div class="item animate__animated animate__fadeInUp text-center">
+                        <i class="fas fa-gem fa-3x text-primary mb-3"></i>
+                        <h4>Véhicule de luxe</h4>
+                        <p><strong style="color: #cd7f32;">Bronze :</strong> </p>
+                        <p><strong style="color: #c0c0c0;">Argent :</strong> </p>
+                        <p><strong style="color: #ffd700;">Or :</strong> </p>
+                    </div>
+                </div>
+
+                <!-- Petit véhicule -->
+                <div class="col-md-4">
+                    <div class="item animate__animated animate__fadeInRight text-center">
+                        <i class="fas fa-car-alt fa-3x text-primary mb-3"></i>
+                        <h4>Petit véhicule</h4>
+                        <p><strong style="color: #cd7f32;">Bronze :</strong> </p>
+                        <p><strong style="color: #c0c0c0;">Argent :</strong> </p>
+                        <p><strong style="color: #ffd700;">Or :</strong></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--fin contrat-->
+
+    <!--debut service suplementaires-->
+    <section class="service">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated animate__fadeInDown" style="font-size: 2rem; color: #333;" >Services Supplémentaires</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="item animate__animated animate__fadeInLeft text-center">
+                        <i class="fas fa-spray-can fa-3x text-primary mb-3"></i>
+                        <h4>baie A moteur</h4>
+                        <p><strong>(+50$)</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="item animate__animated animate__fadeInUp text-center">
+                        <i class="fas fa-vacuum fa-3x text-primary mb-3"></i>
+                        <h4>parfum</h4>
+                        <p><strong>(+10$)</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--fin service suplementaires-->  
+
+    <!-- About Us Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 animate__animated animate__fadeInDown" style="font-size: 2rem; color: #333;">À propos de nous</h2>
+            <p class="text-center animate__animated animate__fadeInUp" style="font-size: 1.2rem; line-height: 1.8; color: #555;">
+                Nous sommes deux jeunes passionnés d’automobile, basés à Montréal et à Joliette. Que ce soit pour redonner de l’éclat à votre véhicule ou pour un nettoyage en profondeur, nous mettons notre savoir-faire et notre souci du détail à votre service. Pour les gros projets, nous unissons nos forces pour garantir un résultat impeccable. Ne vous cassez pas la tête pour le déplacement, nous faisons le trajet pour nettoyer votre voiture à votre domicile. Votre voiture mérite ce qu’il y a de mieux
+                <strong>– confiez-la à des passionnés!</strong>
+            </p>
+        </div>
+    </section>
+    <!-- End of About Us Section -->
+
+    <!-- Team Section -->
+    <section id="team" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 animate__animated animate__fadeInDown" style="font-size: 2rem; color: #333;">L'Équipe</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="team-member animate__animated animate__fadeInLeft">
+                        <img src="massyle.jpg" alt="Massyle" class="rounded-circle mb-3" style="width: 150px; height: 150px;">
+                        <h4>Massyle</h4>
+                        <p>le beste.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="team-member animate__animated animate__fadeInUp">
+                        <img src="wiliam.jpg" alt="Wiliam" class="rounded-circle mb-3" style="width: 150px; height: 150px;">
+                        <h4>Wiliam</h4>
+                        <p>text.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="team-member animate__animated animate__fadeInRight">
+                        <img src="zakaria.jpg" alt="Zakaria" class="rounded-circle mb-3" style="width: 150px; height: 150px;">
+                        <h4>Zakaria</h4>
+                        <p>text.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end team Section -->
+
+    <!-- Horaires Section -->
+    <section id="horaires" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 animate__animated animate__fadeInDown" style="font-size: 2rem; color: #333;">Horaires</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered text-center">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Jour</th>
+                            <th>Heures d'ouverture</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lundi</td>
+                            <td>9h00 - 18h00</td>
+                        </tr>
+                        <tr>
+                            <td>Mardi</td>
+                            <td>9h00 - 18h00</td>
+                        </tr>
+                        <tr>
+                            <td>Mercredi</td>
+                            <td>9h00 - 18h00</td>
+                        </tr>
+                        <tr>
+                            <td>Jeudi</td>
+                            <td>9h00 - 18h00</td>
+                        </tr>
+                        <tr>
+                            <td>Vendredi</td>
+                            <td>9h00 - 18h00</td>
+                        </tr>
+                        <tr>
+                            <td>Samedi</td>
+                            <td>10h00 - 16h00</td>
+                        </tr>
+                        <tr>
+                            <td>Dimanche</td>
+                            <td>Fermé</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- End of Horaires Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 animate__animated animate__fadeInDown" style="font-size: 2rem; color: #333;">Contactez-nous</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name">Nom</label>
+                        <input type="text" class="form-control" id="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Votre email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Votre message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </div>
+    </section>
+    <!-- End of Contact Section -->
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <div>
+                    <h4>Suivez-nous</h4>
+                    <a href="https://facebook.com" target="_blank" class="mr-3" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="mr-3" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="mr-3" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-solid fa-envelope"></i> Email: <a href="mailto:contact@krystalclean.com" style="color: #ffffff;">contact@krystalclean.com</a></p>
+                    <p><i class="fas fa-phone"></i>     Téléphone: <a href="tel:+1234567890" style="color: #ffffff;">+1 234 567 890</a></p>
+                    <p> </p>
+                    <p><i class="fas fa-map-marker-alt"></i> Grand Montréal</p>
+                </div>
+            </div>
+            <p>&copy; 2025 Krystal Clean. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <!-- End of Footer Section -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html> 

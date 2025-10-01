@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krystal Clean - Horaires</title>
+  <link rel="icon" type="image/png" href="auto.jpg" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    html, body {
+    height: 100%;
+    margin: 0;
+    }
+
+    body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    }
+
+    #content {
+    flex: 1;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #111827;
+      color: #fff;
+      padding: 1.5rem 0;
+    }
+
+    header .logo {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    nav {
+      background-color: #112246;
+      padding: 1rem 0;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      color: #17a2b8;
+    }
+    
+    .main-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    }   
+    .section-title {
+      font-family: 'Georgia', serif;
+      font-size: 3rem;
+      color: #333;
+    }
+
+    .section-subtitle {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    table.table {
+      background-color: white;
+    }
+
+    .footer-info {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 2rem 0;
+    }
+
+    footer {
+      background-color: #111827;
+      color: white;
+      padding: 2rem 0;
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      margin-top: auto;
+    }
+
+    footer a {
+      color: #17a2b8;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .footer-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      nav .d-flex {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="text-center position-relative animate__animated animate__fadeInDown">
+    <button id="languageToggle" class="btn btn-light position-absolute" style="top: 10px; right: 20px;">
+      English
+    </button>
+    <div class="container d-flex justify-content-center align-items-center" style="height: 100px;">
+      <img src="auto.jpg" alt="Logo de Krystal Clean" style="height: 80px; margin-right: 10px;" />
+      <div class="logo">Krystal Clean</div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="text-center animate__animated animate__fadeInUp" role="navigation" aria-label="Menu principal">
+    <div class="d-flex justify-content-center align-items-center flex-wrap">
+      <a href="acceuil.html">Accueil</a>
+      <a href="à propos.html">À propos</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="horaires.html">Horaires</a>
+      <a href="contrat.html">Contrat</a>
+    </div>
+  </nav>
+
+<!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated animate__zoomIn" style="font-size: 2rem; color: #333;">Nos Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-item animate__animated animate__fadeInLeft">
+                        <i class="fas fa-car fa-3x text-primary mb-3"></i>
+                        <h4>Nettoyage intérieur</h4>
+                        <p>Un nettoyage en profondeur pour un intérieur impeccable.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item animate__animated animate__fadeInUp">
+                        <i class="fas fa-spray-can fa-3x text-primary mb-3"></i>
+                        <h4>Traitement à la cire</h4>
+                        <p>Protection et brillance pour votre carrosserie.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item animate__animated animate__fadeInRight">
+                        <i class="fas fa-broom fa-3x text-primary mb-3"></i>
+                        <h4>Nettoyage extérieur</h4>
+                        <p>Redonnez de l'éclat à l'extérieur de votre véhicule.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- End of Services Section -->
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-info">
+        <div class="mb-3">
+          <h4>Suivez-nous</h4>
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f mr-3"></i></a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram mr-3"></i></a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter mr-3"></i></a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p><i class="fas fa-envelope"></i> Email : <a href="mailto:contact@krystalclean.com">contact@krystalclean.com</a></p>
+          <p><i class="fas fa-phone"></i> Téléphone : <a href="tel:+1234567890">+1 234 567 890</a></p>
+          <p><i class="fas fa-map-marker-alt"></i> Grand Montréal</p>
+        </div>
+      </div>
+      <hr style="background-color: rgba(255,255,255,0.2);" />
+      <p class="mb-0">&copy; 2025 Krystal Clean. Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+</html>

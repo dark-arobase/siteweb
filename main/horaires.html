@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krystal Clean - Horaires</title>
+    <link rel="icon" type="image/png" sizes="56x56" href="auto.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+        <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background-color: #111827;
+            color: #ffffff;
+            padding: 1.5rem 0;
+        }
+        header .logo {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        nav {
+            background-color: #112246;
+            padding: 1rem;
+        }
+        nav a {
+            font-family: 'Open Sans', sans-serif;
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        nav a:hover {
+            color: #17a2b8;
+        }
+        h2, h4 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+        }
+        .services, .why-choose-us, .contrat {
+            padding: 3rem 0;
+        }
+        .services .service-item, .why-choose-us .item, .contrat .item {
+            text-align: center;
+            padding: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .services .service-item:hover, .why-choose-us .item:hover, .contrat .item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .footer-info {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 2rem 0;
+        }
+        footer {
+            background-color: #111827;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            font-family: 'Roboto', sans-serif;
+        }
+        footer h4 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+        }
+        footer a {
+            color: #17a2b8;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="position-relative text-center animate__animated animate__fadeInDown">
+        <button id="languageToggle" class="lang-toggle btn btn-light btn btn-secondary position-absolute" style="top: 10px; right: 20px;">
+            English
+        </button>
+        <div class="container d-flex justify-content-center align-items-center" style="height: 100px;">
+            <img src="auto.jpg" alt="Logo" style="height: 80px; margin-right: 10px;">
+            <div class="logo">Krystal Clean</div>
+        </div>                
+    </header>    
+
+    <!-- Navigation Section -->
+    <nav class="text-center animate__animated animate__fadeInUp">
+        <div class="d-flex justify-content-center align-items-center">
+            <a href="acceuil.html" class="mx-3">Accueil</a>
+            <a href="à propos.html" class="mx-3">À propos</a>
+            <a href="services.html"class="mx-3">Services</a>
+            <a href="contact.html" class="mx-3">Contact</a>
+            <a href="horaires.html" class="mx-3">Horaires</a>
+            <a href="contrat.html" class="mx-3">Contrat</a>
+        </div>
+    </nav>
+
+    <!-- Horaires Section -->
+    <section id="horaires" class="py-5 bg-light">
+        <div class="container text-center">
+            <h1 class="animate__animated animate__fadeInDown" style="font-family: 'Georgia', serif; font-size: 3rem; color: #333;">Nos horaires chez Krystal Clean</h1>
+            <p class="animate__animated animate__fadeInUp" style="font-family: 'Roboto', sans-serif; font-size: 1.2rem; color: #555; margin-top: 1rem;">
+                Nous sommes ouverts pour vous servir aux horaires suivants :
+            </p>
+            <div class="table-responsive mt-5">
+                <table class="table table-bordered text-center">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Jour</th>
+                            <th>Heures d'ouverture</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lundi</td>
+                            <td>9h00 - 18h00</td>
+                        </tr>
+                        <tr>
+                            <td>Mardi</td>
+                            <td>9h00 - 18h00</td>
+                        </tr>
+                        <tr>
+                            <td>Mercredi</td>
+                            <td>9h00 - 18h00</td>
+                        </tr>
+                        <tr>
+                            <td>Jeudi</td>
+                            <td>9h00 - 18h00</td>
+                        </tr>
+                        <tr>
+                            <td>Vendredi</td>
+                            <td>9h00 - 18h00</td>
+                        </tr>
+                        <tr>
+                            <td>Samedi</td>
+                            <td>10h00 - 16h00</td>
+                        </tr>
+                        <tr>
+                            <td>Dimanche</td>
+                            <td>Fermé</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- End of Horaires Section -->
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <div>
+                    <h4>Suivez-nous</h4>
+                    <a href="https://facebook.com" target="_blank" class="mr-3" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="mr-3" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="mr-3" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-solid fa-envelope"></i> Email: <a href="mailto:contact@krystalclean.com" style="color: #ffffff;">contact@krystalclean.com</a></p>
+                    <p><i class="fas fa-phone"></i> Téléphone: <a href="tel:+1234567890" style="color: #ffffff;">+1 234 567 890</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Grand Montréal</p>
+                </div>
+            </div>
+            <p>&copy; 2025 Krystal Clean. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
