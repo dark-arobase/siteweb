@@ -1,0 +1,197 @@
+/* Base styles moved from inline, with some enhancements */
+:root {
+  --brand-bg: #111827;
+  --brand-accent: #17a2b8;
+  --brand-nav: #112246;
+  --card-bg: #ffffff;
+  --text-color: #333;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--brand-bg);
+  color: #ffffff;
+  padding: 1.5rem 0;
+}
+header .logo {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+nav { background-color: var(--brand-nav); padding: 1rem; }
+nav a {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+}
+nav a:hover { color: var(--brand-accent); }
+
+h2, h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+.services, .why-choose-us, .contrat, .service { padding: 3rem 0; }
+.services .service-item, .why-choose-us .item, .contrat .item, .service .item {
+  text-align: center;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: var(--card-bg);
+}
+.services .service-item:hover, .why-choose-us .item:hover, .contrat .item:hover, .service .item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 2rem 0;
+}
+footer {
+  background-color: var(--brand-bg);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+footer h4 { font-family: 'Open Sans', sans-serif; font-weight: 600; }
+footer a { color: var(--brand-accent); text-decoration: none; font-weight: 500; }
+footer a:hover { text-decoration: underline; }
+
+/* Accessibility */
+.skip-link {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
+  width: auto;
+  height: auto;
+  padding: .5rem .75rem;
+  background: #fff;
+  color: #000;
+  border-radius: .25rem;
+  z-index: 1000;
+}
+
+/* Floating call button */
+.fab-call {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #28a745;
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,.2);
+  transition: transform .2s ease, box-shadow .2s ease;
+  z-index: 999;
+}
+.fab-call:hover { transform: scale(1.05); box-shadow: 0 10px 24px rgba(0,0,0,.24); }
+
+/* WhatsApp button */
+.fab-whatsapp {
+  position: fixed;
+  right: 18px;
+  bottom: 84px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #25D366;
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,.2);
+  transition: transform .2s ease, box-shadow .2s ease;
+  z-index: 999;
+}
+.fab-whatsapp:hover { transform: scale(1.05); box-shadow: 0 10px 24px rgba(0,0,0,.24); }
+
+/* Back to top */
+.back-to-top {
+  position: fixed;
+  right: 18px;
+  bottom: 150px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--brand-nav);
+  color: #fff;
+  border: none;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,.2);
+  cursor: pointer;
+  z-index: 999;
+}
+
+/* Small responsive improvements */
+@media (max-width: 576px) {
+  header .logo { font-size: 2rem; }
+  nav a { margin: 0 .5rem; font-size: .95rem; }
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.8);
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  z-index: 1000;
+}
+.lightbox-img { max-width: 95vw; max-height: 80vh; border-radius: 8px; }
+.lightbox-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #fff;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 36px;
+}
+.lightbox-caption { color: #fff; margin-top: .5rem; text-align: center; }
+
+/* Payments group small gap for browsers without gap */
+.payments > * { margin: 6px; }
+
+/* Dark mode */
+.dark {
+  --card-bg: #1f2937;
+  --text-color: #e5e7eb;
+  background: #0b1220;
+}
+.dark nav { background-color: #0c1a3a; }
+.dark .back-to-top { background: #0c1a3a; }
+.dark .fab-call { box-shadow: 0 8px 20px rgba(0,0,0,.6); }
+.dark .fab-whatsapp { box-shadow: 0 8px 20px rgba(0,0,0,.6); }

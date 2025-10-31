@@ -1,0 +1,11 @@
+{
+  "name": "Krystal Clean",
+  "short_name": "KrystalClean",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#111827",
+  "theme_color": "#111827",
+  "icons": [
+    { "src": "auto.jpg", "sizes": "192x192", "type": "image/jpeg" }
+  ]
+}
